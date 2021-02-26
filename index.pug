@@ -2,7 +2,7 @@ doctype html
 
 head
     meta(charset="utf-8")
-    link(rel="stylesheet", href="../styles/style.css")
+    link(rel="stylesheet", href="./styles/style.css")
     title Rock - Paper - Scissors GAME
 body
     header 
@@ -12,9 +12,9 @@ body
 
     div.score-board 
         div.lastChoice
-            img.lastChoiceImg#last-userChoice(src="../images/empty_plank.png", alt="Her should be an image of the user's last choice.") 
+            img.lastChoiceImg#last-userChoice(src="./images/empty_plank.png", alt="Her should be an image of the user's last choice.") 
         div.lastChoice
-            img.lastChoiceImg#last-compChoice(src="../images/empty_plank.png", alt="Her should be an image of the comp's last choice.")
+            img.lastChoiceImg#last-compChoice(src="./images/empty_plank.png", alt="Her should be an image of the comp's last choice.")
         div.badge#user-label user 
         div.badge#comp-label comp 
         span.streak#user-streak 
@@ -28,12 +28,12 @@ body
     
     div.choices 
         div.choice 
-            img#rock(src="../images/rock_plank.png" alt="Here should be a rock image!")
+            img#rock(src="./images/rock_plank.png" alt="Here should be a rock image!")
         div.choice 
-            img#paper(src="../images/paper_plank.png" alt="Here should be a paper image!")
+            img#paper(src="./images/paper_plank.png" alt="Here should be a paper image!")
         div.choice 
-            img#scissors(src="../images/scissors_plank.png" alt="Here should be a scissors image!")
+            img#scissors(src="./images/scissors_plank.png" alt="Here should be a scissors image!")
     
     p#action-message Make your move ...
 
-    script(src="../scripts/game.js")
+    script(src="./scripts/game.js")
