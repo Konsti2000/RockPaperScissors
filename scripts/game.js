@@ -1,3 +1,10 @@
+// can user hover?
+let userCanHover = false;
+window.addEventListener("mouseover", function onFirstHover() {
+    userCanHover = true;
+    window.removeEventListener("mouseover", onFirstHover, false);
+}, false);
+
 // emojis
 const emos = {
     "undefined": "\u{274C}",
@@ -168,11 +175,11 @@ for(var i = 0; i < optCount; i++){
     });
 
     buttons[i].addEventListener("mouseenter", function () {
-        suggest(index);
+        if(userCanHover) suggest(index);
     });
 
     buttons[i].addEventListener("mouseleave", function () {
-        action_p.innerHTML = action_default;
+        if(userCanHover) action_p.innerHTML = action_default;
     })
 }
 

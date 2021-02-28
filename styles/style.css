@@ -140,7 +140,7 @@ img {
     .choice > img:hover,
     .choice > img:focus {
         cursor: pointer;
-        background-color: red;
+        background-color: orange;
     }
 }
 
