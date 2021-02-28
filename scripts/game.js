@@ -177,6 +177,7 @@ for(var i = 0; i < optCount; i++){
 
     buttons[i].addEventListener("touchend", function (eve) {
         eve.preventDefault();
+        progress(index);
     });
 }
 
