@@ -1,11 +1,3 @@
-// can user hover?
-let userCanHover = false;
-window.addEventListener("mouseover", function onFirstHover() {
-    userCanHover = true;
-    window.removeEventListener("mouseover", onFirstHover, false);
-    alert("user can hover");
-}, false);
-
 // emojis
 const emos = {
     "undefined": "\u{274C}",
@@ -176,12 +168,16 @@ for(var i = 0; i < optCount; i++){
     });
 
     buttons[i].addEventListener("mouseenter", function () {
-        if(userCanHover) suggest(index);
+        suggest(index);
     });
 
     buttons[i].addEventListener("mouseleave", function () {
-        if(userCanHover) action_p.innerHTML = action_default;
-    })
+        action_p.innerHTML = action_default;
+    });
+
+    buttons[i].addEventListener("touchend", function (eve) {
+        eve.preventDefault();
+    });
 }
 
 reset_button.onclick = function () {
