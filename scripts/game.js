@@ -3,6 +3,7 @@ let userCanHover = false;
 window.addEventListener("mouseover", function onFirstHover() {
     userCanHover = true;
     window.removeEventListener("mouseover", onFirstHover, false);
+    alert("user can hover");
 }, false);
 
 // emojis
