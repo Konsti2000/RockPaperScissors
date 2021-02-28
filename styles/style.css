@@ -136,7 +136,7 @@ img {
     transition: all 0.3s ease;
 }
 
-@media (hover:hover) {
+@media (hover: hover) {
     .choice > img:hover,
     .choice > img:focus {
         cursor: pointer;
