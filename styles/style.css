@@ -136,10 +136,12 @@ img {
     transition: all 0.3s ease;
 }
 
-.choice > img:hover,
-.choice > img:focus {
-    cursor: pointer;
-    background-color: orange;
+@media (hover:hover) {
+    .choice > img:hover,
+    .choice > img:focus {
+        cursor: pointer;
+        background-color: orange;
+    }
 }
 
 #action-message {
